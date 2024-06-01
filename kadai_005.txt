@@ -1,0 +1,30 @@
+PS C:\Users\Kouhe\OneDrive\test> cd C:\Users\Kouhe\OneDrive\kadai_github
+PS C:\Users\Kouhe\OneDrive\kadai_github> mkdir git_challenge
+
+
+    ディレクトリ: C:\Users\Kouhe\OneDrive\kadai_github
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        2024/06/02      2:18                git_challenge
+
+
+PS C:\Users\Kouhe\OneDrive\kadai_github> cd git_challenge
+PS C:\Users\Kouhe\OneDrive\kadai_github\git_challenge> git init
+Initialized empty Git repository in C:/Users/Kouhe/OneDrive/kadai_github/git_challenge/.git/
+PS C:\Users\Kouhe\OneDrive\kadai_github\git_challenge> git add hello_world.txt
+PS C:\Users\Kouhe\OneDrive\kadai_github\git_challenge> git commit -m "Hello, world!"
+[main (root-commit) 4fcc4eb] Hello, world!
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+PS C:\Users\Kouhe\OneDrive\kadai_github\git_challenge> git diff C:\Users\Kouhe\OneDrive\kadai_github\git_challenge
+PS C:\Users\Kouhe\OneDrive\kadai_github\git_challenge> git add git_challenge
+fatal: pathspec 'git_challenge' did not match any files
+PS C:\Users\Kouhe\OneDrive\kadai_github\git_challenge> git add hello_world.txt
+PS C:\Users\Kouhe\OneDrive\kadai_github\git_challenge> git commit -m "こんにちは、世界！"
+[main 88f30e2] 縺薙ｓ縺ｫ縺｡縺ｯ縲∽ｸ也阜・
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+PS C:\Users\Kouhe\OneDrive\kadai_github\git_challenge> git log --oneline
+88f30e2 (HEAD -> main) こんにちは、世界！
+4fcc4eb Hello, world!
